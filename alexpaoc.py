@@ -8,7 +8,6 @@ targets = []
 print ("1 es normal")
 velocidad = float (input("Ingrese la velcidad: "))
 
-
 def tap(x, y):
     "Respond to screen tap."
     if not inside(ball):
@@ -46,7 +45,7 @@ def move():
         target.x -= 0.5 * velocidad
 
     if inside(ball):
-        speed.y -= 0.35 * velocidad
+        speed.y -= 0.35 
         ball.move(speed)
 
     dupe = targets.copy()
